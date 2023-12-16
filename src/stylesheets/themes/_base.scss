@@ -1,0 +1,11 @@
+@use "../abstracts/" as *;
+
+html, html[data-theme="base"] {
+
+    --theme-body-background: #{$blue-10};
+    --theme-body-text: #{$neutral-90};
+    --theme-body-text-alt: #{$orange-100};
+
+    --theme-body-text-title: #{$cyan-80};
+    --theme-body-text-title-alt: #{$orange-100};
+}

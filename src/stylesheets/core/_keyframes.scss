@@ -1,0 +1,12 @@
+// Default spinner animation
+@keyframes spinDefault {
+    from { transform: rotate(0deg) }
+    to { transform: rotate(359deg) }
+}
+
+// Alternative (Tick-Tick-TickTickTick) spin animation for i.e. the logo
+@keyframes spinLoader {
+    0%,100% { transform: rotate(0deg) }
+    50%{ transform: rotate(359deg) }
+    75% { transform: rotate(180deg) }
+}

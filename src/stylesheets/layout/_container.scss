@@ -1,0 +1,33 @@
+@use "../abstracts/" as *;
+
+.container {
+    margin: 0 auto;
+    max-width: 100%;
+    padding-left: spacing(4);
+    padding-right: spacing(4);
+    width: auto;
+
+    @include media-breakpoint-up(sm) {
+        max-width: (map-get($breakpoints, sm) - spacing(8));
+    }
+
+    @include media-breakpoint-up(md) {
+        max-width: (map-get($breakpoints, md) - spacing(8));
+    }
+
+    @include media-breakpoint-up(lg) {
+        max-width: (map-get($breakpoints, lg) - spacing(8));
+    }
+
+    &--spaced {
+        margin-bottom: spacing(4);
+
+        & + & {
+            margin-top: spacing(4);
+        }
+    }
+
+    &--full {
+        max-width: 100%;
+    }
+}

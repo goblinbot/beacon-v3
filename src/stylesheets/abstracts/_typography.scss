@@ -1,0 +1,18 @@
+$-font-fallback: Helvetica, sans-serif;
+
+$font-family-base: 'Titillium', $-font-fallback;
+$font-family-alt: 'ProFontWindows', 'Titillium-Bold', $-font-fallback;
+$font-family-bold: 'Titillium-Bold', $-font-fallback;
+
+$single-rem-unit-value: 10px;
+
+$font-size-base-px: 16px;
+
+$font-size: (
+    xl2: 3.2rem,
+    xl: 2.4rem,
+    lg: 2rem,
+    md: 1.8rem,
+    base: 1.6rem,
+    sm: 1.4rem
+);

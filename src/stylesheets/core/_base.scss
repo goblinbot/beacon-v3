@@ -1,0 +1,61 @@
+@use "sass:map";
+@use "../abstracts/" as *;
+
+:root {
+	@media (prefers-reduced-motion: no-preference) {
+		scroll-behavior: smooth;
+	}
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	overflow-x: hidden;
+	overflow-y: scroll;
+
+    font-size: $single-rem-unit-value;
+}
+
+body {
+    font-family: $font-family-base;
+    font-size: $font-size-base-px;
+    font-size: map.get($font-size, base);
+
+    background-color: var(--theme-body-background);
+    color: var(--theme-body-text);
+
+    letter-spacing: 0;
+    text-rendering: optimizeLegibility;
+	text-size-adjust: 100%;
+
+    min-width: $body-min-width;
+}
+
+button {
+	background: none;
+	border: none;
+	box-shadow: none;
+	font-size: inherit;
+	font-weight: inherit;
+	padding: 0;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: inherit;
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+section {
+	display: block;
+	position: relative;
+	width: 100%;
+}
