@@ -1,0 +1,32 @@
+@use "../abstracts/" as *;
+
+html[data-theme="red"] {
+
+    --theme-body-background: #{$cp-neutral-0};
+    --theme-body-text: #{$neutral-90};
+    --theme-body-text-secondary: #{$neutral-80};
+    --theme-body-text-tertiary: #{$cp-cyan-50};
+
+    --theme-body-text-title: #{$cp-yellow-50};
+    --theme-body-text-title-alt: #{$cp-cyan-50};
+
+    --theme-block-background: #{$cp-red-80};
+    --theme-block-header-background: #{$cp-red-80};
+    --theme-block-header-border: #{$cp-red-50};
+
+    --theme-status-tab-title-disrupted-background: #{$cp-yellow-60};
+    --theme-status-tab-body-background: #{$cp-red-80};
+    --theme-status-tab-body-text: #{$neutral-90};
+    --theme-status-tab-body-top: #{$cp-red-50};
+    --theme-status-tab-body-disrupted-background: #{$cp-red-50};
+    --theme-status-tab-body-disrupted-text: #{$cp-neutral-0};
+    --theme-status-tab-body-disrupted-top: #{$cp-red-50};
+
+    --theme-bulletin-background: #{$cp-neutral-0};
+    --theme-bulletin-border: transparent;
+    --theme-bulletin-item-background: #{$cp-red-90};
+    --theme-bulletin-item-text: #{$neutral-100};
+    --theme-bulletin-item-author: #{$neutral-80};
+
+
+}

@@ -29,6 +29,7 @@ body {
 	text-size-adjust: 100%;
 
     min-width: $body-min-width;
+	transition: $transition-mid;
 }
 
 button {
