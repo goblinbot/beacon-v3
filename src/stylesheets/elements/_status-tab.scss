@@ -1,0 +1,81 @@
+@use "../abstracts/" as *;
+@use "sass:map";
+
+.status-tab {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 40px;
+    width: 100%;
+
+    &__title {
+        color: var(--theme-status-tab-title-text);
+        background: var(--theme-status-tab-title-background);
+        font-weight: 700;
+        font-family: $font-family-alt;
+        font-size: map-get($font-size, lg);
+        flex: 1;
+        min-width: 100px;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            border-width: 16px 10px;
+            border-style: solid;
+        }
+
+        &::before {
+            bottom: 0;
+            border-color: transparent var(--theme-body-background) var(--theme-body-background) transparent;
+        }
+
+        &::after {
+            top: 0;
+            border-color: var(--theme-body-background) var(--theme-body-background) transparent transparent;
+        }
+    }
+
+    &__content {
+        color: var(--theme-status-tab-body-text);
+        background: var(--theme-status-tab-body-background);
+        border-top: 2px solid var(--theme-status-tab-body-top);
+        font-size: map-get($font-size, md);
+        flex: 3;
+
+        &::before {
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            border-style: solid;
+            border-width: 0 0 12px 12px;
+            border-color: transparent var(--theme-body-background) var(--theme-body-background) transparent;
+        }
+    }
+
+    &__title,
+    &__content {
+        display: inline-flex;
+        align-items: center;
+        position: relative;
+        padding: spacing(2);
+        height: 40px;
+    }
+
+    &.disrupted &__title {
+        color: var(--theme-status-tab-title-disrupted-text);
+        background: var(--theme-status-tab-title-disrupted-background);
+    }
+
+    &.disrupted &__content {
+        color: var(--theme-status-tab-body-disrupted-text);
+        background: var(--theme-status-tab-body-disrupted-background);
+        border-color: var(--theme-status-tab-body-disrupted-top);
+        animation: blinkText linear infinite 2.4s;
+    }
+
+
+
+}

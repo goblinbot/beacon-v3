@@ -1,0 +1,6 @@
+$grid-gap: 16px;
+$spacing-base: 4px;
+
+@function spacing($i: 1) {
+    @return ($spacing-base * $i);
+}

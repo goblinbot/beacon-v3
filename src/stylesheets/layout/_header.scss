@@ -1,0 +1,28 @@
+@use "sass:map";
+@use "../abstracts/" as *;
+
+.header {
+    grid-column: span 24;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 64px;
+    width: 100%;
+
+    h1 {
+        font-family: $font-family-alt;
+	    font-size: map-get($font-size, xl3);
+        margin: 0;
+    }
+
+    .clock {
+        font-family: $font-family-alt;
+	    font-size: map-get($font-size, xl3);
+
+        color: var(--theme-body-text-title-alt);
+        margin: 0;
+    }
+
+}

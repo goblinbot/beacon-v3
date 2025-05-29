@@ -1,11 +1,5 @@
 @use "sass:map";
 
-$spacing-base: 4px;
-
-@function spacing($i: 1) {
-    @return ($spacing-base * $i);
-}
-
 $breakpoints: (
     lg: 1440px,
     md: 1240px,
@@ -14,12 +8,9 @@ $breakpoints: (
 );
 
 @mixin media-breakpoint-up($-bp: sm) {
-
-    @media screen and (min-width: map-get($breakpoints, $-bp) ) {
+    @media screen and (min-width: map-get($breakpoints, $-bp)) {
         @content;
     }
-
-
 }
 
 $body-min-width: map-get($breakpoints, min);

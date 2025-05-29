@@ -1,0 +1,9 @@
+@use "../abstracts/" as *;
+
+.sidebar {
+    grid-column: span 6;
+
+    display: flex;
+    flex-direction: column;
+    gap: spacing(2);
+}

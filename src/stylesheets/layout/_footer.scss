@@ -1,0 +1,10 @@
+@use "../abstracts/" as *;
+
+.footer {
+    grid-column: span 24;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: $grid-gap;
+    padding-bottom: $grid-gap;
+}

@@ -4,8 +4,43 @@ html, html[data-theme="base"] {
 
     --theme-body-background: #{$blue-10};
     --theme-body-text: #{$neutral-90};
-    --theme-body-text-alt: #{$orange-100};
+    --theme-body-text-secondary: #{$cyan-80};
+    --theme-body-text-tertiary: #{$orange-100};
 
     --theme-body-text-title: #{$cyan-80};
     --theme-body-text-title-alt: #{$orange-100};
+
+    --theme-block-background: #{$blue-40};
+    --theme-block-header-background: #{$blue-60};
+    --theme-block-header-border: #{$blue-70};
+
+    --theme-status-tab-title-background: #{$cyan-80};
+    --theme-status-tab-title-text: #{$blue-10};
+    --theme-status-tab-body-background: #{$blue-40};
+    --theme-status-tab-body-text: #{$neutral-90};
+    --theme-status-tab-body-top: #{$blue-70};
+
+    --theme-status-tab-title-disrupted-background: #{$orange-90};
+    --theme-status-tab-title-disrupted-text: #{$blue-10};
+    --theme-status-tab-body-disrupted-background: #{$blue-40};
+    --theme-status-tab-body-disrupted-text: #{$orange-100};
+    --theme-status-tab-body-disrupted-top: #{$orange-100};
+
+    --theme-last-notification-text: #{$neutral-90};
+
+    --theme-bulletin-background: #{$blue-20};
+    --theme-bulletin-border: #{$blue-40};
+    --theme-bulletin-title: #{$cyan-80};
+    --theme-bulletin-text: #{$neutral-90};
+
+    --theme-bulletin-item-background: #{$blue-10};
+    --theme-bulletin-item-text: #{$neutral-90};
+    --theme-bulletin-item-author: #{$neutral-60};
+
+
+    --theme-bulletin-priority-high: #{$red-90};
+    --theme-bulletin-priority-mid: #{$yellow-100};
+    --theme-bulletin-priority-low: #{$cyan-80};
+
+
 }

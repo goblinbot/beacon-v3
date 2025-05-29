@@ -1,0 +1,42 @@
+@use "../abstracts/" as *;
+@use "sass:map";
+
+.block {
+    background-color: var(--theme-block-background);
+    color: var(--theme-body-text-secondary);
+    position: relative;
+    height: 100%;
+    transition: $transition-slow;
+
+    &--alt-font {
+        font-family: $font-family-alt;
+    }
+
+    &--chipped {
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            border-width: 0 0 30px 30px;
+            border-style: solid;
+            border-color: transparent var(--theme-body-background) var(--theme-body-background) transparent
+        }
+    }
+
+    &__header {
+        background: var(--theme-block-header-background);
+        color: var(--theme-body-text-secondary);
+        border-bottom: 1px solid var(--theme-block-header-border);
+        border-top: 1px solid var(--theme-block-header-border);
+
+        > h3 {
+            font-size: map-get($font-size, md);
+            padding: 4px 0 4px 8px;
+        }
+    }
+
+    &__content {
+        padding: $grid-gap;
+    }
+}

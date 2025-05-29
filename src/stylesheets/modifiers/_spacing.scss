@@ -1,0 +1,63 @@
+@use "../abstracts/" as *;
+
+.margin {
+    &--auto {
+        margin: auto;
+    }
+
+    @for $i from 0 through 12 {
+        &--#{$i} {
+            margin: spacing($i);
+        }
+
+        &--top-#{$i} {
+            margin-top: spacing($i);
+        }
+
+        &--bottom-#{$i} {
+            margin-bottom: spacing($i);
+        }
+
+        &--left-#{$i} {
+            margin-left: spacing($i);
+        }
+
+        &--right-#{$i} {
+            margin-right: spacing($i);
+        }
+    }
+}
+
+.padding {
+    @for $i from 0 through 12 {
+
+        &--#{$i} {
+            padding: spacing($i);
+        }
+
+        &--top-#{$i} {
+            padding-top: spacing($i);
+        }
+
+        &--bottom-#{$i} {
+            padding-bottom: spacing($i);
+        }
+
+        &--left-#{$i} {
+            padding-left: spacing($i);
+        }
+
+        &--right-#{$i} {
+            padding-right: spacing($i);
+        }
+    }
+
+}
+
+.gap {
+    @for $i from 0 through 12 {
+        &--#{$i} {
+            gap: spacing($i);
+        }
+    }
+}

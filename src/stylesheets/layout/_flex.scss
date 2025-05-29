@@ -1,0 +1,30 @@
+@use "../abstracts/" as *;
+
+$-col-count: 24;
+
+.flex {
+    display: flex;
+
+    &--align-center {
+        align-items: center;
+    }
+
+    &--column {
+        flex-direction: column;
+    }
+
+    &--row {
+        flex-direction: row;
+    }
+
+    &--auto {
+        flex: auto;
+    }
+
+    @for $i from 0 through $-col-count {
+        &--#{$i} {
+            flex: $i;
+        }
+    }
+
+}
