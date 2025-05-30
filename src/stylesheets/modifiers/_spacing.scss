@@ -5,6 +5,14 @@
         margin: auto;
     }
 
+    &--left-auto {
+        margin-left: auto;
+    }
+
+    &--right-auto {
+        margin-right: auto;
+    }
+
     @for $i from 0 through 12 {
         &--#{$i} {
             margin: spacing($i);
