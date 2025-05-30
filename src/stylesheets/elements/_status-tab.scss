@@ -70,10 +70,11 @@
     }
 
     &.disrupted &__content {
+        animation: blinkText linear infinite 2.4s;
         color: var(--theme-status-tab-body-disrupted-text);
         background: var(--theme-status-tab-body-disrupted-background);
         border-color: var(--theme-status-tab-body-disrupted-top);
-        animation: blinkText linear infinite 2.4s;
+        font-weight: 700;
     }
 
 
