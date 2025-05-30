@@ -3,29 +3,29 @@
 
 h1,
 .h1 {
-	font-size: map-get($font-size, xl2);
+	font-size: map.get($font-size, xl2);
 }
 
 h2,
 .h2 {
-	font-size: map-get($font-size, xl);
+	font-size: map.get($font-size, xl);
 }
 
 h3,
 .h3 {
-	font-size: map-get($font-size, lg);
+	font-size: map.get($font-size, lg);
 }
 
 h4,
 .h4 {
-	font-size: map-get($font-size, md);
+	font-size: map.get($font-size, md);
 }
 
 h5,
 .h5,
 h6,
 .h6 {
-	font-size: map-get($font-size, base);
+	font-size: map.get($font-size, base);
 }
 
 h1,
@@ -53,7 +53,7 @@ h6,
 }
 
 p {
-	font-size: map-get($font-size, base);
+	font-size: map.get($font-size, base);
 	margin: 0 0 0.8rem 0;
 
 	&.alt {

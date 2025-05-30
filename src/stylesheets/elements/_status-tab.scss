@@ -13,7 +13,7 @@
         background: var(--theme-status-tab-title-background);
         font-weight: 700;
         font-family: $font-family-alt;
-        font-size: map-get($font-size, lg);
+        font-size: map.get($font-size, lg);
         flex: 1;
         min-width: 100px;
 
@@ -41,7 +41,7 @@
         color: var(--theme-status-tab-body-text);
         background: var(--theme-status-tab-body-background);
         border-top: 2px solid var(--theme-status-tab-body-top);
-        font-size: map-get($font-size, md);
+        font-size: map.get($font-size, md);
         flex: 3;
 
         &::before {

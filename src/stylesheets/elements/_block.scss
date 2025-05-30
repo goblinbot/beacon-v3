@@ -31,7 +31,7 @@
         border-top: 1px solid var(--theme-block-header-border);
 
         > h3 {
-            font-size: map-get($font-size, md);
+            font-size: map.get($font-size, md);
             padding: 4px 0 4px 8px;
         }
     }

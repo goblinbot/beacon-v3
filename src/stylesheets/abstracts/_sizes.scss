@@ -8,9 +8,9 @@ $breakpoints: (
 );
 
 @mixin media-breakpoint-up($-bp: sm) {
-    @media screen and (min-width: map-get($breakpoints, $-bp)) {
+    @media screen and (min-width: map.get($breakpoints, $-bp)) {
         @content;
     }
 }
 
-$body-min-width: map-get($breakpoints, min);
+$body-min-width: map.get($breakpoints, min);

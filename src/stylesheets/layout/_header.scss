@@ -13,13 +13,13 @@
 
     h1 {
         font-family: $font-family-alt;
-	    font-size: map-get($font-size, xl3);
+	    font-size: map.get($font-size, xl3);
         margin: 0;
     }
 
     .clock {
         font-family: $font-family-alt;
-	    font-size: map-get($font-size, xl3);
+	    font-size: map.get($font-size, xl3);
 
         color: var(--theme-body-text-title-alt);
         margin: 0;

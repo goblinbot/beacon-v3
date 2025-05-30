@@ -6,12 +6,12 @@
     align-items: center;
     gap: 8px;
     color: var(--theme-last-notification-text);
-    font-size: map-get($font-size, md);
+    font-size: map.get($font-size, md);
     width: 100%;
 
     svg {
-        height: map-get($font-size, md);
-        width: map-get($font-size, md);
+        height: map.get($font-size, md);
+        width: map.get($font-size, md);
     }
     
 }
